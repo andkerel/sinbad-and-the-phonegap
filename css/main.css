@@ -5,7 +5,7 @@
 /* Background palette credit: http://www.colourlovers.com/palette/475875/Gentle_Waves*/
 
 
-body {
+#app {
     -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
     -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
     -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
@@ -94,7 +94,7 @@ h1 {
     color:#FFFFFF;
     background-color:#4B946A;
     font-size:3em;
-    margin: 0% 50% 0% 50%;
+    /*margin: 0% 50% 0% 50%;*/
     padding:0.5em;
     width: auto;
     text-align: center;
