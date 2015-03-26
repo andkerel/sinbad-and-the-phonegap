@@ -1,0 +1,131 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+/* Background palette credit: http://www.colourlovers.com/palette/475875/Gentle_Waves*/
+
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#D3E2B6;
+    background-image:linear-gradient(top, #68B3AF 75%, #87BDB1 50%, #AACCB1 25%, #D3E2B6 0%);
+    background-image:-webkit-linear-gradient(top, #68B3AF 51%, #AACCB1 25%,  #D3E2B6 0%);
+    background-image:-ms-linear-gradient(top, #68B3AF 51%, #AACCB1 25%,  #D3E2B6 0%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0.75, #68B3AF),
+        color-stop(0.51, #87BDB1),
+        color-stop(0.25, #AACCB1),
+        color-stop(0, #D3E2B6)
+    );
+    background-attachment:fixed;
+    font-family:'Lora', Times, serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    /*text-transform:uppercase;*/
+    width:100%;
+}
+
+/* Loading ellipsis animation */
+.dot-one {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.0s;
+    animation: dot 1.3s infinite;
+    animation-delay: 0.0s;
+}
+
+.dot-two {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.2s;
+      animation: dot 1.3s infinite;
+      animation-delay: 0.2s;
+}
+
+.dot-three {
+    opacity: 0;
+    -webkit-animation: dot 1.3s infinite;
+    -webkit-animation-delay: 0.3s;
+     animation: dot 1.3s infinite;
+     animation-delay: 0.3s;
+}
+
+@-webkit-keyframes dot {
+      0% { opacity: 0; }
+     50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes dot {
+      0% { opacity: 0; }
+     50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Portrait layout (default) */
+.loading, .complete {
+    width: 100%;
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+
+}
+
+h1 {
+    font-size:4em;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.text-button {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    background-color:#4B946A;
+    font-size:3em;
+    margin: 0% 50% 0% 50%;
+    padding:0.5em;
+    width: auto;
+    text-align: center;
+    vertical-align: baseline;
+    display:inline-block;
+}
+
+.loading.text-button {
+    background-color:#333333;
+    display:block;
+}
+
+.complete {
+    display:none;
+}
+
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+
