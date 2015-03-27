@@ -1,0 +1,15 @@
+/* ----------------------------------------------------
+   created with http://www.codeandweb.com/texturepacker 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:37c7db98a9e6c19c7a5b09cacc699c51:2da3e06d6041378d162b3bd0bb797d58:a8d43d3a17fc5e3d93cb0943128b7499$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(sinbad-sprites9.png);}
+
+.sinbad-sprites-10 {width:535px; height:400px; background-position: -10px -10px}
