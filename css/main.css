@@ -150,6 +150,9 @@ h1 {
 
 .complete {
     display:none;
+}
+
+.titlebounce {
     animation:titlebounce 2000ms infinite;
     -webkit-animation:titlebounce 2000ms infinite;
 }
@@ -182,6 +185,143 @@ h1 {
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
+
+/*SPRITESHEET*/
+
+    /*BUBBLEFISH*/
+    @-webkit-keyframes bubbleplay {
+        from { background-position: -5400px; }
+        to { background-position: -7200px; }  /* <-- width of spritesheet*/
+    }
+
+    @-moz-keyframes bubbleplay {
+        from { background-position: -5400px; }
+        to { background-position: -7200px; } /* <-- width of spritesheet*/
+    }
+
+    @-o-keyframes bubbleplay {
+        from { background-position: -5400px; }
+        to { background-position: -7200px; } /* <-- width of spritesheet*/
+    }
+
+    @keyframes bubbleplay {
+        from { background-position: -5400px; }
+        to { background-position: -7200px; } /* <-- width of spritesheet*/
+    }
+
+    .bubblefish {
+        width: 600px;
+        height: 510px;
+        background-image: url("../imgs/spritesheet-new.png"); /* <-- url to spritesheet*/
+        background-position: -5400px 0;
+        background-repeat: no-repeat;
+        margin: 0 auto;    
+        -webkit-animation: bubbleplay 0.3s steps(3) infinite; 
+        -moz-animation: bubbleplay 0.3s steps(3) infinite;
+        -o-animation: bubbleplay 0.3s steps(3) infinite;
+        animation: bubbleplay 0.3s steps(3) infinite;
+    }  
+
+    /*LEAFFISH*/
+    @-webkit-keyframes leafplay {
+        from { background-position: -3600px; }
+        to { background-position: -5400px; }  /* <-- width of spritesheet*/
+    }
+
+    @-moz-keyframes leafplay {
+        from { background-position: -3600px; }
+        to { background-position: -5400px; } /* <-- width of spritesheet*/
+    }
+
+    @-o-keyframes leafplay {
+        from { background-position: -3600px; }
+        to { background-position: -5400px; } /* <-- width of spritesheet*/
+    }
+
+    @keyframes leafplay {
+        from { background-position: -3600px; }
+        to { background-position: -5400px; } /* <-- width of spritesheet*/
+    }
+
+    .leaffish {
+        width: 600px;
+        height: 510px;
+        background-image: url("../imgs/spritesheet-new.png"); /* <-- url to spritesheet*/
+        background-position: -3600px 0;
+        background-repeat: no-repeat;
+        margin: 0 auto;    
+        -webkit-animation: leafplay 0.3s steps(3) infinite; 
+        -moz-animation: leafplay 0.3s steps(3) infinite;
+        -o-animation: leafplay 0.3s steps(3) infinite;
+        animation: leafplay 0.3s steps(3) infinite;
+    }  
+
+    /*BRUSHFISH*/
+    @-webkit-keyframes brushplay {
+        from { background-position: -1800px; }
+        to { background-position: -3600px; }  /* <-- width of spritesheet*/
+    }
+
+    @-moz-keyframes brushplay {
+        from { background-position: -1800px; }
+        to { background-position: -3600px; } /* <-- width of spritesheet*/
+    }
+
+    @-o-keyframes brushplay {
+        from { background-position: -1800px; }
+        to { background-position: -3600px; } /* <-- width of spritesheet*/
+    }
+
+    @keyframes brushplay {
+        from { background-position: -1800px; }
+        to { background-position: -3600px; } /* <-- width of spritesheet*/
+    }
+
+    .brushfish {
+        width: 600px;
+        height: 510px;
+        background-image: url("../imgs/spritesheet-new.png"); /* <-- url to spritesheet*/
+        background-position: -1800px 0;
+        background-repeat: no-repeat;
+        margin: 0 auto;    
+        -webkit-animation: brushplay 0.3s steps(3) infinite; 
+        -moz-animation: brushplay 0.3s steps(3) infinite;
+        -o-animation: brushplay 0.3s steps(3) infinite;
+        animation: brushplay 0.3s steps(3) infinite;
+    }    
+
+
+    /*PLAINFISH*/
+    @-webkit-keyframes plainplay {
+        from { background-position: 0px; }
+        to { background-position: -1800px; }  /* <-- width of spritesheet*/
+    }
+
+    @-moz-keyframes plainplay {
+        from { background-position: 0px; }
+        to { background-position: -1800px; } /* <-- width of spritesheet*/
+    }
+
+    @-o-keyframes plainplay {
+        from { background-position: 0px; }
+        to { background-position: -1800px; } /* <-- width of spritesheet*/
+    }
+
+    @keyframes plainplay {
+        from { background-position: 0px; }
+        to { background-position: -1800px; } /* <-- width of spritesheet*/
+    }
+
+    .plainfish {
+        width: 600px;
+        height: 510px;
+        background-image: url("../imgs/spritesheet-new.png"); /* <-- url to spritesheet*/
+        margin: 0 auto;    
+        -webkit-animation: plainplay 0.3s steps(3) infinite; 
+        -moz-animation: plainplay 0.3s steps(3) infinite;
+        -o-animation: plainplay 0.3s steps(3) infinite;
+        animation: plainplay 0.3s steps(3) infinite; /* <-- animation parameters, see below*/
+    }​
 
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
