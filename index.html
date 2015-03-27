@@ -11,6 +11,9 @@
 
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+        <script src="js/sinbad-app.js"></script>
+
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <!--         <link rel="stylesheet" type="text/css" href="css/jquery.mobile.custom.theme.min.css" />
         <link rel="stylesheet" type="text/css" href="css/jquery.mobile.custom.structure.min.css" /> -->
@@ -18,22 +21,32 @@
         <title>Hello Sinbad</title>
 
 <!--    <script src="js/jquery.mobile.custom.min.js"></script> -->
-        <script src="js/sinbad-app.js"></script>
 
     </head>
     <body>
         <div id="app">
 
-            <div class="loading">
-                <p class="blink text-button">loading<span class="dot-one">.</span><span class="dot-two">.</span><span class="dot-three">.</span></p>
-            </div>
+            <!-- ABOUT PAGE -->
 
-            <div class="complete">
-                <div id="landing-page">
-                     <h1 class="text-button">sinbad</h1>
+            <div class="pages" data-role="page" id="about">
+                <div role="main" class="ui-content">
+                    <div class="loading">
+                        <p class="blink text-button">loading<span class="dot-one">.</span><span class="dot-two">.</span><span class="dot-three">.</span></p>
+                    </div>
+                    <div class="complete">
+                        <h1 class="text-button">sinbad</h1>
+                    </div>
                 </div>
             </div>
 
+            <!-- GAME PAGE -->
+            <div class="pages" data-role="page" id="game">
+                <div role="main" class="ui-content">
+                    <h1>GAME PAGE</h1>
+                </div>
+            </div>
+
+    
         </div>
     </body>
 </html>
