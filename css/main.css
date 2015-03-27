@@ -169,6 +169,23 @@ h1 {
     to { margin-top: 10vh; }
 }
 
+.plain-bounce {
+    animation:titlebounce 2000ms infinite;
+    -webkit-animation:titlebounce 2000ms infinite;
+}
+
+@keyframes titlebounce {
+    from { margin-top: 0; }
+    50% { margin-top: 2.5vh; }
+    to { margin-top: 0; }
+}
+ 
+@-webkit-keyframes titlebounce {
+    from { margin-top: 0; }
+    50% { margin-top: 2.5vh; }
+    to { margin-top: 0; }
+}
+
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
@@ -186,34 +203,45 @@ h1 {
     to { opacity: 1.0; }
 }
 
+#game-wrapper {
+    margin: 2vh auto 2vh auto;
+    text-align: center;
+}
+
+#game-wrapper {
+    font-size: 0.75em;
+}
+
 /*SPRITESHEET*/
+
 
     /*BUBBLEFISH*/
     @-webkit-keyframes bubbleplay {
-        from { background-position: -5400px; }
-        to { background-position: -7200px; }  /* <-- width of spritesheet*/
+        from { background-position: -2700px; }
+        to { background-position: -3600px; }  /* <-- width of spritesheet*/
     }
 
     @-moz-keyframes bubbleplay {
-        from { background-position: -5400px; }
-        to { background-position: -7200px; } /* <-- width of spritesheet*/
+        from { background-position: -2700px; }
+        to { background-position: -3600px; } /* <-- width of spritesheet*/
     }
 
     @-o-keyframes bubbleplay {
-        from { background-position: -5400px; }
-        to { background-position: -7200px; } /* <-- width of spritesheet*/
+        from { background-position: -2700px; }
+        to { background-position: -3600px; } /* <-- width of spritesheet*/
     }
 
     @keyframes bubbleplay {
-        from { background-position: -5400px; }
-        to { background-position: -7200px; } /* <-- width of spritesheet*/
+        from { background-position: -2700px; }
+        to { background-position: -3600px; } /* <-- width of spritesheet*/
     }
 
     .bubblefish {
-        width: 600px;
-        height: 510px;
+        width: 300px;
+        height: 255px;
         background-image: url("../imgs/spritesheet-new.png"); /* <-- url to spritesheet*/
-        background-position: -5400px 0;
+        background-size: 1200% 100%;
+        background-position: -81.81% 0; /* 2700 / (3600-300) * 100 */
         background-repeat: no-repeat;
         margin: 0 auto;    
         -webkit-animation: bubbleplay 0.3s steps(3) infinite; 
@@ -224,31 +252,32 @@ h1 {
 
     /*LEAFFISH*/
     @-webkit-keyframes leafplay {
-        from { background-position: -3600px; }
-        to { background-position: -5400px; }  /* <-- width of spritesheet*/
+        from { background-position: -1800px; }
+        to { background-position: -2700px; }  /* <-- width of spritesheet*/
     }
 
     @-moz-keyframes leafplay {
-        from { background-position: -3600px; }
-        to { background-position: -5400px; } /* <-- width of spritesheet*/
+        from { background-position: -1800px; }
+        to { background-position: -2700px; } /* <-- width of spritesheet*/
     }
 
     @-o-keyframes leafplay {
-        from { background-position: -3600px; }
-        to { background-position: -5400px; } /* <-- width of spritesheet*/
+        from { background-position: -1800px; }
+        to { background-position: -2700px; }/* <-- width of spritesheet*/
     }
 
     @keyframes leafplay {
-        from { background-position: -3600px; }
-        to { background-position: -5400px; } /* <-- width of spritesheet*/
+        from { background-position: -1800px; }
+        to { background-position: -2700px; } /* <-- width of spritesheet*/
     }
 
     .leaffish {
-        width: 600px;
-        height: 510px;
+        width: 300px;
+        height: 255px;
         background-image: url("../imgs/spritesheet-new.png"); /* <-- url to spritesheet*/
-        background-position: -3600px 0;
         background-repeat: no-repeat;
+        background-size: 1200% 100%;
+        background-position: -54.54% 0; /* 1800 / (3600-300) * 100 */
         margin: 0 auto;    
         -webkit-animation: leafplay 0.3s steps(3) infinite; 
         -moz-animation: leafplay 0.3s steps(3) infinite;
@@ -258,31 +287,32 @@ h1 {
 
     /*BRUSHFISH*/
     @-webkit-keyframes brushplay {
-        from { background-position: -1800px; }
-        to { background-position: -3600px; }  /* <-- width of spritesheet*/
+        from { background-position: -900px; }
+        to { background-position: -1800px; }  /* <-- width of spritesheet*/
     }
 
     @-moz-keyframes brushplay {
-        from { background-position: -1800px; }
-        to { background-position: -3600px; } /* <-- width of spritesheet*/
+        from { background-position: -900px; }
+        to { background-position: -1800px; } /* <-- width of spritesheet*/
     }
 
     @-o-keyframes brushplay {
-        from { background-position: -1800px; }
-        to { background-position: -3600px; } /* <-- width of spritesheet*/
+        from { background-position: -900px; }
+        to { background-position: -1800px; } /* <-- width of spritesheet*/
     }
 
     @keyframes brushplay {
-        from { background-position: -1800px; }
-        to { background-position: -3600px; } /* <-- width of spritesheet*/
+        from { background-position: -900px; }
+        to { background-position: -1800px; } /* <-- width of spritesheet*/
     }
 
     .brushfish {
-        width: 600px;
-        height: 510px;
+        width: 300px;
+        height: 255px;
         background-image: url("../imgs/spritesheet-new.png"); /* <-- url to spritesheet*/
-        background-position: -1800px 0;
+        background-size: 1200% 100%;
         background-repeat: no-repeat;
+        background-position: -27.27% 0; /* 900 / (3600-300) * 100 */
         margin: 0 auto;    
         -webkit-animation: brushplay 0.3s steps(3) infinite; 
         -moz-animation: brushplay 0.3s steps(3) infinite;
@@ -293,38 +323,84 @@ h1 {
 
     /*PLAINFISH*/
     @-webkit-keyframes plainplay {
-        from { background-position: 0px; }
-        to { background-position: -1800px; }  /* <-- width of spritesheet*/
+        from { background-position: 0; }
+        to { background-position: -300%; }  /* <-- width of spritesheet*/
     }
 
     @-moz-keyframes plainplay {
-        from { background-position: 0px; }
-        to { background-position: -1800px; } /* <-- width of spritesheet*/
+        from { background-position: 0; }
+        to { background-position: -300%; }  /* <-- width of spritesheet*/
     }
 
     @-o-keyframes plainplay {
-        from { background-position: 0px; }
-        to { background-position: -1800px; } /* <-- width of spritesheet*/
+        from { background-position: 0; }
+        to { background-position: -300%; }  /* <-- width of spritesheet*/
     }
 
     @keyframes plainplay {
-        from { background-position: 0px; }
-        to { background-position: -1800px; } /* <-- width of spritesheet*/
+        from { background-position: 0; }
+        to { background-position: -300%; }  /* <-- width of spritesheet*/
     }
 
     .plainfish {
-        width: 600px;
-        height: 510px;
+        width: 300px;
+        height: 255px;
         background-image: url("../imgs/spritesheet-new.png"); /* <-- url to spritesheet*/
-        margin: 0 auto;    
+        margin: 0 auto; 
+        background-size: 1200% 100%; /* x=7200/600*100, y=510/510*100 */  
+        background-position: 0 0; 
         -webkit-animation: plainplay 0.3s steps(3) infinite; 
         -moz-animation: plainplay 0.3s steps(3) infinite;
         -o-animation: plainplay 0.3s steps(3) infinite;
         animation: plainplay 0.3s steps(3) infinite; /* <-- animation parameters, see below*/
     }​
 
-/* Landscape layout (with min-width) */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+/*spritesheet-specific media query*/
+    @media screen and (min-width:720px) {
+        .plainfish, .brushfish, .leaffish, .bubblefish {
+            width: 600px;
+            height: 510px;
+        }
+    }
 
+
+/*BRUSH OPTIONS*/
+#brushkit {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 2%;
 }
+
+#watercolor {
+    background-image: url("../imgs/sinbad-brushes-01.png");
+    width: 60px; /* 417 full */
+    height: 60px;
+    background-size: cover;
+    display: inline-block;
+    margin: 0 1% 0 1%;
+}
+
+#leaves {
+    background-image: url("../imgs/sinbad-brushes-03.png");
+    width: 60px; /* 417 full */
+    height: 60px;
+    background-size: cover;
+    display: inline-block;
+    margin: 0 1% 0 1%;
+}
+
+#bubbles {
+    background-image: url("../imgs/sinbad-brushes-02.png");
+    width: 60px; /* 417 full */
+    height: 60px;
+    background-size: cover;
+    display: inline-block;
+    margin: 0 1% 0 1%;
+}
+
+/* Landscape layout (with min-width) */
+/*@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+
+}*/
 
