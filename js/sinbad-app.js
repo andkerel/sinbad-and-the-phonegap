@@ -25,8 +25,59 @@ function appRun() {
         });
     });
 
+    //DRAG AND DROP
+
+    //initialize dragging
+    $("#watercolor").draggable( {
+        revert: true,
+        cursor: 'move',
+    } );
+    $("#leaves").draggable( {
+        revert: true,
+        cursor: 'move',
+    } );
+    $("#bubbles").draggable( {
+        revert: true,
+        cursor: 'move',
+    } );
+
+    //initialize droppable callback
+    $("#spritesheet").droppable({
+        tolerance: "pointer",
+        drop: sinbadChange
+    });
+
+    console.log("before droppable");
+
+    //event handler for drop event
+    function sinbadChange(event, ui) {
+        var currentBrush = ui.draggable.attr('id');
+        console.log(currentBrush);
+        console.log("in droppable");
+        if (currentBrush == "watercolor") {
+            $("#spritesheet").removeClass();
+            $("#spritesheet").addClass("brushfish");
+            console.log("DROPPED");
+        } else if (currentBrush == "leaves") {
+            $("#spritesheet").removeClass();
+            $("#spritesheet").addClass("leaffish");
+            console.log("DROPPED LEAF");
+        } else if (currentBrush == "bubbles") {
+            $("#spritesheet").removeClass();
+            $("#spritesheet").addClass("bubblefish");
+            console.log("DROPPED BUBBLE");
+        } else {
+            $("#spritesheet").removeClass();
+            $("#spritesheet").addClass("plainfish");
+        }
+    }  
+
+    // //add listener to drop event
+    // $("spritesheet").on("drop", function(event, ui) {
+
+    // })
 
 
-    }); 
+    }); //end jquery
 
-}
+} //end appRun
