@@ -11,6 +11,7 @@
 
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
         <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
 
         <script src="js/sinbad-app.js"></script>
 
@@ -45,9 +46,17 @@
             <!-- GAME PAGE -->
             <div class="pages" data-role="page" id="game">
                 <div role="main" class="ui-content">
-                    <h1>GAME PAGE</h1>
-                    <div class="titlebounce">
-                        <div class="plainfish"></div>
+                    <div id="game-wrapper">
+                        <h1 class="text-button">customize sinbad!</h1>
+                        <div id="brushkit">
+                            <div id="watercolor"></div>
+                            <div id="leaves"></div>
+                            <div id="bubbles"></div>
+                        </div>
+
+                        <div class="plain-bounce sinbad">
+                            <div id="spritesheet" class="plainfish"></div>
+                        </div>
                     </div>
                 </div>
             </div>
