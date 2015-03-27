@@ -72,7 +72,7 @@ table {
     );
     background-attachment:fixed;
     font-family:'Lora', Times, serif;
-    font-size:12px;
+    font-size:0.85em;
     height:100vh;
     margin:0px;
     padding:0px;
@@ -210,6 +210,12 @@ h1 {
 
 #game-wrapper {
     font-size: 0.75em;
+}
+
+.infobox {
+ margin: 5%;
+ text-align: center;
+ font-size: 1.2em;
 }
 
 /*SPRITESHEET*/
