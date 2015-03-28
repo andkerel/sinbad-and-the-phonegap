@@ -50,8 +50,6 @@ function appRun() {
     //event handler for drop event
     function sinbadChange(event, ui) {
         var currentBrush = ui.draggable.attr('id');
-        console.log(currentBrush);
-        console.log("in droppable");
         if (currentBrush == "watercolor") {
             $("#spritesheet").removeClass();
             $("#spritesheet").addClass("brushfish");
