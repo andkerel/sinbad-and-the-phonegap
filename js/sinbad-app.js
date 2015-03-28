@@ -47,8 +47,6 @@ function appRun() {
         drop: sinbadChange
     });
 
-    console.log("before droppable");
-
     //event handler for drop event
     function sinbadChange(event, ui) {
         var currentBrush = ui.draggable.attr('id');
@@ -57,15 +55,12 @@ function appRun() {
         if (currentBrush == "watercolor") {
             $("#spritesheet").removeClass();
             $("#spritesheet").addClass("brushfish");
-            console.log("DROPPED");
         } else if (currentBrush == "leaves") {
             $("#spritesheet").removeClass();
             $("#spritesheet").addClass("leaffish");
-            console.log("DROPPED LEAF");
         } else if (currentBrush == "bubbles") {
             $("#spritesheet").removeClass();
             $("#spritesheet").addClass("bubblefish");
-            console.log("DROPPED BUBBLE");
         } else {
             $("#spritesheet").removeClass();
             $("#spritesheet").addClass("plainfish");
