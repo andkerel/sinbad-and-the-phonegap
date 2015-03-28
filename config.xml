@@ -6,10 +6,11 @@
         id        = "com.andreakereliuk"
         version   = "1.0.0">
 
-    <name>Hello World</name>
+    <name>Hello Sinbad</name>
 
     <description>
-        Trying out Phonegap's Hello World sample application that responds to the deviceready event. (By mwbrooks on github)
+        Customize Sinbad the undersea creature by dragging and dropping brush styles. 
+        App created by PhoneGap Build and sourced as sinbad-and-the-phonegap by @andkerel on GitHub.
     </description>
 
     <author href="http://andreakereliuk.com" email="andrea@andreakereliuk.com">
