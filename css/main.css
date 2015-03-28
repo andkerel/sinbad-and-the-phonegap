@@ -61,6 +61,7 @@ table {
     background-image:linear-gradient(top, #68B3AF 75%, #87BDB1 50%, #AACCB1 25%, #D3E2B6 0%);
     background-image:-webkit-linear-gradient(top, #68B3AF 51%, #AACCB1 25%,  #D3E2B6 0%);
     background-image:-ms-linear-gradient(top, #68B3AF 51%, #AACCB1 25%,  #D3E2B6 0%);
+    background-image:-moz-linear-gradient(top, #D3E2B6 0%, #AACCB1 25%,  #68B3AF 51%);
     background-image:-webkit-gradient(
         linear,
         left top,
