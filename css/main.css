@@ -81,6 +81,10 @@ table {
     overflow:none;
 }
 
+b {
+    font-weight: 700;
+}
+
 /* Loading ellipsis animation */
 .dot-one {
     opacity: 0;
@@ -153,43 +157,9 @@ h1 {
     display:none;
 }
 
-.titlebounce {
-    animation:titlebounce 2000ms infinite;
-    -webkit-animation:titlebounce 2000ms infinite;
-}
-
-@keyframes titlebounce {
-    from { margin-top: 10vh; }
-    50% { margin-top: 12.5vh; }
-    to { margin-top: 10vh; }
-}
- 
-@-webkit-keyframes titlebounce {
-    from { margin-top: 10vh; }
-    50% { margin-top: 12.5vh; }
-    to { margin-top: 10vh; }
-}
-
-.plain-bounce {
-    animation:titlebounce 2000ms infinite;
-    -webkit-animation:titlebounce 2000ms infinite;
-}
-
-@keyframes titlebounce {
-    from { margin-top: 0; }
-    50% { margin-top: 2.5vh; }
-    to { margin-top: 0; }
-}
- 
-@-webkit-keyframes titlebounce {
-    from { margin-top: 0; }
-    50% { margin-top: 2.5vh; }
-    to { margin-top: 0; }
-}
-
 .blink {
-    animation:fade 3000ms infinite;
-    -webkit-animation:fade 3000ms infinite;
+    animation:fade 1500ms infinite;
+    -webkit-animation:fade 1500ms infinite;
 }
 
 @keyframes fade {
@@ -205,19 +175,59 @@ h1 {
 }
 
 #game-wrapper {
-    margin: 2vh auto 2vh auto;
     text-align: center;
+    font-size: 0.75em;
+    height: 90vh;
+    /*display: table;*/
+    width:100%;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
-#game-wrapper {
-    font-size: 0.75em;
+#game-wrapper .vert-align {
+    margin: 2% auto 2% auto;
+    height: 25%;
+    /*display: table-row;*/
+    vertical-align: middle;
 }
 
 .infobox {
  margin: 5%;
  text-align: center;
- font-size: 1.2em;
+ font-size: 2em;
 }
+
+.plain-bounce {
+    animation:plainbounce ease-in-out 1500ms infinite;
+    -webkit-animation:plainbounce ease-in-out 1500ms infinite;
+    -moz-animation:plainbounce ease-in-out 1500ms infinite;
+    -o-animation:plainbounce ease-in-out 1500ms infinite;
+}
+
+@keyframes plainbounce {
+    from {margin-top: 0; }
+    50% { margin-top: 5%; }
+    to { margin-top: 0; }
+}
+ 
+@-webkit-keyframes plainbounce {
+    from { margin-top: 0; }
+    50% { margin-top: 5%; }
+    to { margin-top: 0; }
+}
+
+@-o-keyframes plainbounce {
+    from { margin-top: 0; }
+    50% { margin-top: 5%; }
+    to { margin-top: 0; }
+}
+ 
+@-moz-webkit-keyframes plainbounce {
+    from { margin-top: 0; }
+    50% { margin-top: 5%; }
+    to { margin-top: 0; }
+}
+
 
 /*SPRITESHEET*/
 
@@ -385,7 +395,7 @@ h1 {
     height: 60px;
     background-size: cover;
     display: inline-block;
-    margin: 0 1% 0 1%;
+    margin: 0 5% 0 1%;
 }
 
 #leaves {
@@ -394,7 +404,7 @@ h1 {
     height: 60px;
     background-size: cover;
     display: inline-block;
-    margin: 0 1% 0 1%;
+    margin: 0 5% 0 0%;
 }
 
 #bubbles {
@@ -403,7 +413,7 @@ h1 {
     height: 60px;
     background-size: cover;
     display: inline-block;
-    margin: 0 1% 0 1%;
+    margin: 0 1% 0 0%;
 }
 
 /* Landscape layout (with min-width) */
